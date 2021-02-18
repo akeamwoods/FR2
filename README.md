@@ -7,4 +7,4 @@ Notes:
 - I spent just under 4 hours redesinging on this (using my original project as a starting point).
 - Yes, I have designed this to look similar to trello. Their UI for task management is probably the best that i've seen (obviously all of the code is written by myself from scratch).
 - There is an example e2e test using pupeeter.
-
+- I've tried keeping most of the components modular and reusable, sort of like those you would find in a component library. This is why i'm passing things through rather that dispatching or accessing the store from within them. I wanted to keep as much separation from the component library and the redux store as possible.
