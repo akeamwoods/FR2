@@ -1,17 +1,17 @@
 import React from "react";
-import { DndProvider } from "react-dnd";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
 import { ToDoPage } from "./pages/ToDoPage";
 import { store } from "./store";
-import { HTML5Backend } from "react-dnd-html5-backend";
+import { DndProvider } from "react-dnd-multi-backend";
+import HTML5toTouch from "react-dnd-multi-backend/dist/esm/HTML5toTouch";
 import "./style.css";
 
 const rootElement = document.getElementById("root");
 render(
   <React.StrictMode>
     <Provider store={store}>
-      <DndProvider backend={HTML5Backend}>
+      <DndProvider options={HTML5toTouch}>
         <ToDoPage />
       </DndProvider>
     </Provider>
