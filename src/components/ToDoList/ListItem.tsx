@@ -13,7 +13,7 @@ export const ListItem: React.FC<{
   const isInEditMode = useTypedSelector((state) => state.editId === todo.id);
 
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative" }} id="listItem">
       <ToDo
         todo={todo}
         editToDo={() => dispatch(actions.todoEditModeEntered(todo.id))}
