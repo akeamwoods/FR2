@@ -9,3 +9,4 @@ Notes:
 - There is an example e2e test using pupeeter.
 - I've tried keeping most of the components modular and reusable, sort of like those you would find in a component library. This is why i'm passing things through rather that dispatching or accessing the store from within them. I wanted to keep as much separation from the component library and the redux store as possible. I realise that the ToDoList Component is coupled to the store, this would be easy to change by having a renderListItem prop and a couple of other slight changes but I was running out of time so left it.
 - Some of the actions are still styled from the original version. I would now declare actions in a responsive, event driven way. e.g. 'newTodoButtonPressed' as opposed to 'todoCreated'.
+- Drag and drop also works on mobile 
